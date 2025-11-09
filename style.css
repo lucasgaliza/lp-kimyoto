@@ -1,0 +1,118 @@
+/* Configurações Globais */
+body {
+    background: #F9F9F9;
+    font-family: 'Inter', sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header (Cabeçalho) */
+.header {
+    height: 210px;
+    background: #FBBB04; /* Amarelo */
+    border: 16px solid #E22F28; /* Vermelho */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    /* Usando flexbox para alinhar os itens */
+    display: flex;
+    justify-content: space-between; /* Itens nas pontas */
+    align-items: center;
+    padding: 0 80px; /* Espaçamento lateral */
+    box-sizing: border-box; /* Para o 'border' não bagunçar o tamanho */
+}
+
+.logo img {
+    width: 144px; /* Tamanho do logo no Figma */
+    height: auto;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 48px; /* Espaço entre os itens */
+}
+
+.menu-items a {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    color: #E22F28; /* Vermelho */
+    text-decoration: none;
+}
+
+.menu-items a.button {
+    background: #E22F28;
+    color: #F9F9F9; /* Branco */
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Seção Hero */
+.hero-image {
+    height: 640px;
+    /* Você precisa exportar a imagem 'Hero Image' do Figma */
+    background: url('hero-image.jpg') center center no-repeat;
+    background-size: cover;
+    
+    /* Posicionando o texto */
+    position: relative;
+}
+
+.hero-copy {
+    /* O Figma posicionou isso de forma absoluta. 
+       Você pode ajustar 'top' e 'left' ou usar Flexbox/Grid. */
+    position: absolute;
+    width: 759px;
+    height: 104px;
+    left: 521px; /* Isso não é ideal, mas é o que estava no Figma */
+    top: 417px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero-copy h1 {
+    font-family: 'Kaushan Script', cursive; /* Fonte especial */
+    font-size: 72px;
+    text-align: center;
+    color: #807B19; /* Verde */
+    margin: 0;
+}
+
+/* Seção de Produtos (Exemplo rápido) */
+.produtos {
+    width: 1120px;
+    margin: 40px auto; /* Centraliza a seção */
+}
+
+.produtos h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 56px;
+    color: #E22F28;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.card {
+    width: 352px;
+}
+
+.card img {
+    width: 100%;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #121211;
+}
+
+.card p {
+    font-size: 24px;
+    color: #454545;
+}
