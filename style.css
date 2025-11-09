@@ -52,7 +52,7 @@ body {
 .hero-image {
     height: 640px;
     /* Você precisa exportar a imagem 'Hero Image' do Figma */
-    background: url('images/hero-image.jpg') center center no-repeat;
+    background: url('images/hero-image.png') center center no-repeat;
     background-size: cover;
     
     /* Posicionando o texto */
