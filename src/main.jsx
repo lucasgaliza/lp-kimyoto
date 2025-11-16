@@ -7,10 +7,10 @@ import SobrePage from './pages/SobrePage.jsx'
 import ContatoPage from './pages/ContatoPage.jsx'
 import ProdutosPage from './pages/ProdutosPage.jsx'
 import ContatoSucessoPage from './pages/ContatoSucessoPage.jsx';
-
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<HomePage />} />
@@ -20,4 +20,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="produtos" element={<ProdutosPage />} />
       </Route>
     </Routes>
+  </BrowserRouter>
 )
