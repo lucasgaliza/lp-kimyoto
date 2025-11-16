@@ -11,15 +11,13 @@ import ContatoSucessoPage from './pages/ContatoSucessoPage.jsx';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<HomePage />} />
-          <Route path="sobre" element={<SobrePage />} />
-          <Route path="contato" element={<ContatoPage />} />
-          <Route path="contato/sucesso" element={<ContatoSucessoPage />} />
-          <Route path="produtos" element={<ProdutosPage />} />
-        </Route>
-      </Routes>
-  </React.StrictMode>,
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<HomePage />} />
+        <Route path="sobre" element={<SobrePage />} />
+        <Route path="contato" element={<ContatoPage />} />
+        <Route path="contato/sucesso" element={<ContatoSucessoPage />} />
+        <Route path="produtos" element={<ProdutosPage />} />
+      </Route>
+    </Routes>
 )
