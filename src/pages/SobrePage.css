@@ -1,0 +1,124 @@
+.hero-sobre {
+  border-radius: 8px;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto 80px auto;
+}
+
+.hero-sobre-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.hero-sobre-copy {
+   z-index: 2;
+   text-align: center;
+   padding: 0 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.hero-sobre-copy h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  color: #E22F28;
+  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.sobre-page-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px 80px 20px;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.sobre-bloco-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sobre-bloco-texto h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 56px;
+  color: #E22F28;
+  letter-spacing: -0.02em;
+}
+
+.sobre-bloco-texto p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #454545;
+  line-height: 160%;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'Inter';
+  font-size: 18px;
+  color: #121211;
+}
+
+.contato-lista li {
+  font-weight: 400;
+}
+
+.contato-lista li strong {
+  font-weight: 500;
+  color: #E22F28;
+}
+
+.sobre-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.sobre-image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero-sobre-copy h1 {
+    font-size: 56px;
+  }
+
+  .sobre-bloco-texto h2 {
+    font-size: 48px;
+  }
+
+  .sobre-image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sobre-page-container {
+    gap: 40px;
+  }
+}
