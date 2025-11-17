@@ -1,9 +1,9 @@
 import React from 'react';
 import './HomePage.css';
-import heroBg from '../assets/hero-image.png';
-import imgTemperos from '../assets/temperos.png';
-import imgChas from '../assets/chas.png';
-import imgGraos from '../assets/graos.png';
+import heroBg from '../assets/hero-image.webp';
+import imgTemperos from '../assets/temperos.webp';
+import imgChas from '../assets/chas.webp';
+import imgGraos from '../assets/graos.webp';
 import imgPacote from '../assets/pacote.svg';
 import CtaWhatsapp from '../components/CtaWhatsapp';
 
