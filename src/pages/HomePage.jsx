@@ -1,18 +1,17 @@
 import React from 'react';
 import './HomePage.css';
-import heroBg from '../assets/hero-image.webp';
-import imgTemperos from '../assets/temperos.webp';
-import imgChas from '../assets/chas.webp';
-import imgGraos from '../assets/graos.webp';
+import heroBg from '../assets/hero-image.png';
+import imgTemperos from '../assets/temperos.png';
+import imgChas from '../assets/chas.png';
+import imgGraos from '../assets/graos.png';
 import imgPacote from '../assets/pacote.svg';
 import CtaWhatsapp from '../components/CtaWhatsapp';
 
 function HomePage() {
   return (
     <>
-      <section 
-        className="hero-image"
-        style={{ backgroundImage: `url(${heroBg})` }}>
+      <section className="hero-image">
+        <img src={heroBg} alt="Kimyoto Alimentos Hero" className="hero-image-tag" />
         <div className="hero-copy">
         </div>
       </section>
