@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './SobrePage.css';
 import CtaWhatsapp from '../components/CtaWhatsapp';
-import heroBg from '../assets/sobre-hero.jpg';
-import imgSpices from '../assets/sobre-spices.jpg';
-import imgGrains from '../assets/sobre-grains.jpg';
+import heroBg from '../assets/sobre-hero.webp';
+import imgSpices from '../assets/sobre-spices.webp';
+import imgGrains from '../assets/sobre-grains.webp';
 
 function SobrePage() {
   const { hash } = useLocation();

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ContatoPage.css';
 
-import imgTyping from '../assets/contato-typing.jpg';
+import imgTyping from '../assets/contato-typing.webp';
 
 function ContatoPage() {
   const [nome, setNome] = useState('');

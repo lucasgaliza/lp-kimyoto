@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './ProdutosPage.css';
 import CtaWhatsapp from '../components/CtaWhatsapp';
-import heroBg from '../assets/produtos-hero.jpg';
-import imgTemperos from '../assets/foto-temperos.jpg';
-import imgChas from '../assets/foto-chas.jpg';
-import imgGraos from '../assets/foto-graos.jpg';
+import heroBg from '../assets/produtos-hero.webp';
+import imgTemperos from '../assets/foto-temperos.webp';
+import imgChas from '../assets/foto-chas.webp';
+import imgGraos from '../assets/foto-graos.webp';
 
 
 function ProdutosPage() {
