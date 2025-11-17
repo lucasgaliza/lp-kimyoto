@@ -134,6 +134,24 @@
   background-color: #c02621;
 }
 
+.button-ver-produtos:disabled {
+  background-color: #cccccc;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.button-ver-produtos:disabled:hover {
+  background-color: #cccccc;
+}
+
+.construcao-legenda {
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  margin-top: -16px; 
+}
+
+
 @media (min-width: 768px) {
   .hero-produtos {
     margin: 0 auto 80px auto; 
