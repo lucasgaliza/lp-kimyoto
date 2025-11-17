@@ -73,7 +73,7 @@ function ContatoPage() {
                 type="text" 
                 id="nome" 
                 name="nome" 
-                placeholder="Jane"
+                placeholder="Seu nome"
                 value={nome}
                 onChange={(e) => setNome(e.target.value)}
                 required 
@@ -85,7 +85,7 @@ function ContatoPage() {
                 type="text" 
                 id="sobrenome" 
                 name="sobrenome" 
-                placeholder="Smitherton"
+                placeholder="Seu sobrenome"
                 value={sobrenome}
                 onChange={(e) => setSobrenome(e.target.value)}
                 required 

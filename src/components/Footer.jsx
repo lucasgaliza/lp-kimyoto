@@ -12,8 +12,8 @@ function Footer() {
         <div className="footer-logo">
           <img src={logoFooter} alt="Logo Kimyoto Alimentos" />
           <p>
-            © 2025 Kimyoto Alimentos.<br />
-            Todos os direitos reservados.
+            © 2025 Kimyoto Alimentos<br />
+            Todos os direitos reservados
           </p>
         </div>
 

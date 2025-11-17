@@ -45,13 +45,13 @@ function SobrePage() {
           <ul className="contato-lista">
             <li><strong>Telefone:</strong> (11) 2094-5811</li>
             <li><strong>Whatsapp:</strong> (11) 97098-6716</li>
-            <li><strong>Email:</strong> contato.kimyoto@gmail.com</li>
+            <li><strong>Email:</strong> <a href="mailto:contato.kimyoto@gmail.com">contato.kimyoto@gmail.com</a></li>
           </ul>
         </section>
 
         <section className="sobre-bloco-texto" id="junte-se">
           <h2>Junte-se a nossa família!</h2>
-          <p>Seja para expandir seu mix de produtos ou começar do zero, temos condições acessíveis e negociáveis, com margens atrativas especially nas primeiras compras.</p>
+          <p>Seja para expandir seu mix de produtos ou começar do zero, temos condições acessíveis e negociáveis, com margens atrativas especialmente nas primeiras compras.</p>
           <p>Aproveite nossos preços competitivos de atacado e impulsione suas vendas com nosso portfólio diversificado de especiarias.</p>
         </section>
 

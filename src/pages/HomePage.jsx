@@ -43,16 +43,16 @@ function HomePage() {
           
           <article className="texto-bloco">
             <h3>Quem somos</h3>
-            <p>Atuamos no mercado a mais de 20 anos, priorizando qualidade e preços acessíveis. Saiba mais!</p>
+            <p>Atuamos no mercado a mais de 20 anos, priorizando qualidade e preços acessíveis.</p>
           </article>
 
           <article className="texto-bloco">
             <h3>Como comprar</h3>
-            <p>Entre em contato com um de nossos atendentes, nossos produtos são vendidos a preços exclusivos de atacado!</p>
+            <p>Entre em contato conosco, nossos produtos são vendidos a preços exclusivos de atacado!</p>
           </article>
 
           <article className="texto-bloco">
-            <h3>Junte-se a família!</h3>
+            <h3>Junte-se a família</h3>
             <p>Diversifique sua loja com nossos produtos naturais ou inicie a sua própria jornada de empreendedor!</p>
           </article>
         </div>
