@@ -1,48 +1,99 @@
 .header-wrapper {
-  background: #FBBB04;
-  border-bottom: 16px solid #E22F28;
+  background: #FBBB04; 
+  border-bottom: 16px solid #E22F28; 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-sizing: border-box;
+  
   height: 210px; 
-  display: flex;
+  display: flex; 
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 
 .header {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1120px; 
   margin: 0 auto;
+  
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   box-sizing: border-box; 
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
 }
 
 .logo img {
   width: 144px; 
   height: auto;
+  display: block; 
+}
+
+.hamburger-button {
   display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 110;
 }
 
 .menu-items {
-  display: flex;
+  display: none;
+  position: absolute;
+  top: 210px; 
+  left: 0;
+  width: 100%;
+  background: #fdfdfd;
+  flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 24px;
+  padding: 32px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items.open {
+  display: flex; 
 }
 
 .menu-items a {
   font-family: 'Inter';
-  font-weight: 500;
-  font-size: 20px;
-  color: #E22F28;
+  color: #E22F28; 
   text-decoration: none;
+  padding: 10px 0;
 }
 
 .menu-items a.button-header {
   background: #E22F28;
-  color: #F9F9F9;
+  color: #F9F9F9; 
   padding: 14px 24px;
   border-radius: 8px;
   font-size: 16px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none; 
+  }
+
+  .menu-items {
+    display: flex; 
+    position: static; 
+    flex-direction: row; 
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: auto; 
+    gap: 48px; 
+  }
+
+  .menu-items a {
+    padding: 0; 
+  }
 }

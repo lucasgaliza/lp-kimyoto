@@ -59,7 +59,7 @@ function HomePage() {
         </div>
         
         <div className="institucional-imagem">
-            <img src={imgPacote} alt="Pacote de produtos Kimyoto" />
+          <img src={imgPacote} alt="Pacote de produtos Kimyoto" />
         </div>
       </section>
       <CtaWhatsapp />

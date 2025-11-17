@@ -1,56 +1,55 @@
 .hero-image {
-  height: 640px;
-  background-position: center center;
-  background-repeat: no-repeat;
+  height: 400px;
+  background: url('../assets/hero-image.webp') center center no-repeat;
   background-size: cover;
   border-radius: 8px;
-  position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
+  position: relative; 
+  margin: 0 20px;
 }
 
 .hero-copy {
   position: absolute;
   width: 759px;
   top: 417px;
+  
   left: 50%;
   transform: translateX(-50%); 
+  
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero-copy h1 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Kaushan Script', cursive; 
   font-size: 72px;
   line-height: 104px;
   text-align: center;
-  color: #807B19;
+  color: #807B19; 
 }
 
 .produtos-section {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 80px 0;
-  box-sizing: border-box;
+  padding: 40px 20px 0 20px;
+  box-sizing: border-box; 
 }
 
 .section-title-produtos {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 56px;
   color: #E22F28;
   letter-spacing: -0.02em;
-  margin-bottom: 40px;
+  margin-bottom: 32px; 
 }
 
 .card-container {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px; 
+  align-items: center; 
 }
 
 .card {
-  width: 352px;
+  width: 100%; 
+  max-width: 352px; 
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -81,26 +80,23 @@
 .institucional-section {
   width: 100%;
   max-width: 1120px;
-  margin: 80px auto;
+  margin: 40px auto; 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 32px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .institucional-texto {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  flex-basis: 448px;
-  flex-grow: 1;
+  gap: 32px; 
+  width: 100%; 
 }
 
 .section-title-institucional {
   font-family: 'Kaushan Script';
-  font-size: 48px;
   color: #E22F28;
   letter-spacing: -0.02em;
 }
@@ -108,7 +104,7 @@
 .texto-bloco {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8px; 
 }
 
 .texto-bloco h3 {
@@ -127,12 +123,57 @@
 }
 
 .institucional-imagem {
-  flex-basis: 628px;
-  flex-grow: 1;
+  flex-basis: 628px; 
+  flex-grow: 1; 
 }
 
 .institucional-imagem img {
-  width: 100%;
-  height: auto;
+  width: 100%; 
+  height: auto; 
   object-fit: cover;
+  border: 24px solid #E22F28; 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box; 
+}
+
+
+@media (min-width: 768px) {
+  .hero-image {
+    height: 640px; 
+    margin: 0; 
+  }
+
+  .produtos-section {
+    padding: 80px 0 0 0; 
+  }
+
+  .card-container {
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 32px;
+    align-items: stretch; 
+  }
+
+  .card {
+    width: 352px; 
+  }
+
+  .institucional-section {
+    margin: 80px auto; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .institucional-texto {
+    gap: 48px; 
+    flex-basis: 448px; 
+  }
+
+  .institucional-imagem img {
+    width: 628px; 
+    height: 374px;
+  }
 }
