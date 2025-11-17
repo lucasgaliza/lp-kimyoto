@@ -19,7 +19,7 @@ function ContatoPage() {
     const formData = { nome, sobrenome, email, mensagem };
 
     try {
-      const response = await fetch("https://formspree.io/f/SEU_ID_AQUI", { 
+      const response = await fetch("https://formspree.io/f/mjkjjoyj", { 
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
