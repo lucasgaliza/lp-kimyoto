@@ -1,13 +1,48 @@
 import React, { useState } from 'react';
-import './ContatoPage.css';
+import { useNavigate } from 'react-router-dom'; 
+import './ContatoPage.css'; 
 
-import imgTyping from '../assets/contato-typing.webp';
+import imgTyping from '../assets/contato-typing.jpg';
 
 function ContatoPage() {
   const [nome, setNome] = useState('');
   const [sobrenome, setSobrenome] = useState('');
   const [email, setEmail] = useState('');
   const [mensagem, setMensagem] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false); 
+  const navigate = useNavigate(); 
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); 
+    setIsSubmitting(true);
+
+    const formData = { nome, sobrenome, email, mensagem };
+
+    try {
+      const response = await fetch("https://formspree.io/f/SEU_ID_AQUI", { 
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setNome('');
+        setSobrenome('');
+        setEmail('');
+        setMensagem('');
+        navigate('/contato/sucesso'); 
+      } else {
+        alert("Ocorreu um erro ao enviar o formulário. Tente novamente.");
+      }
+    } catch (error) {
+      alert("Ocorreu um erro de rede. Tente novamente.");
+    }
+
+    setIsSubmitting(false);
+  };
 
   return (
     <div className="contato-page-container">
@@ -20,14 +55,17 @@ function ContatoPage() {
         <ul className="contato-lista-info">
           <li><strong>Telefone:</strong> (11) 2094-5811</li>
           <li><strong>Whatsapp:</strong> (11) 97098-6716</li>
-          <li><strong>Email:</strong> contato.kimyoto@gmail.com</li>
+          <li>
+            <strong>Email:</strong> 
+            <a href="mailto:contato.kimyoto@gmail.com">contato.kimyoto@gmail.com</a>
+          </li>
         </ul>
 
         <form 
           className="contato-form"
-          action="https://formspree.io/f/mjkjjoyj"
-          method="POST"
+          onSubmit={handleSubmit} 
         >
+          <h2>Enviar mensagem</h2> 
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="nome">Nome</label>
@@ -35,7 +73,7 @@ function ContatoPage() {
                 type="text" 
                 id="nome" 
                 name="nome" 
-                placeholder="Seu nome"
+                placeholder="Jane"
                 value={nome}
                 onChange={(e) => setNome(e.target.value)}
                 required 
@@ -47,7 +85,7 @@ function ContatoPage() {
                 type="text" 
                 id="sobrenome" 
                 name="sobrenome" 
-                placeholder="Seu sobrenome"
+                placeholder="Smitherton"
                 value={sobrenome}
                 onChange={(e) => setSobrenome(e.target.value)}
                 required 
@@ -81,7 +119,9 @@ function ContatoPage() {
             ></textarea>
           </div>
 
-          <button type="submit" className="button-enviar">Enviar</button>
+          <button type="submit" className="button-enviar" disabled={isSubmitting}>
+            {isSubmitting ? 'Enviando...' : 'Enviar'}
+          </button>
         </form>
       </div>
 
