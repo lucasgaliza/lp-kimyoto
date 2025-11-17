@@ -145,8 +145,10 @@
 }
 
 .construcao-legenda {
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
   font-style: italic;
+  font-weight: 400;
   color: #666;
   margin-top: -16px; 
 }

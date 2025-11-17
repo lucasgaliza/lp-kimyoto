@@ -29,7 +29,6 @@ function ProdutosPage() {
       >
         <img src={heroBg} alt="Banner de produtos" className="hero-produtos-image" />
         <div className="hero-produtos-copy">
-          <h1>Os melhores sabores!</h1>
         </div>
       </section>
 
