@@ -20,10 +20,10 @@ function Footer() {
         <div className="footer-social">
           <p>Nos siga nas redes sociais!</p>
           <div className="social-icons">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/kimyoto-alimentos-5bb2a232b/" target="_blank" rel="noopener noreferrer">
               <img src={iconLinkedin} alt="LinkedIn" width="40" height="40" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/kimyotoalimentos?igsh=aTA4cGltZDQ4bXFp" target="_blank" rel="noopener noreferrer">
               <img src={iconInstagram} alt="Instagram" width="40" height="40" />
             </a>
           </div>
