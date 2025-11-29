@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import './ContatoPage.css'; 
 
-import imgTyping from '../assets/contato-typing.jpg';
+import imgTyping from '../assets/contato-typing.webp';
 
 function ContatoPage() {
   const [nome, setNome] = useState('');
