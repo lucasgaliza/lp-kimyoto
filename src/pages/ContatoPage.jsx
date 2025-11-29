@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import './ContatoPage.css'; 
 
-import imgTyping from '../assets/contato-typing.webp';
+import imgTyping from '../assets/contato-typing.jpg';
 
 function ContatoPage() {
   const [nome, setNome] = useState('');
@@ -19,7 +19,7 @@ function ContatoPage() {
     const formData = { nome, sobrenome, email, mensagem };
 
     try {
-      const response = await fetch("https://formspree.io/f/mjkjjoyj", { 
+      const response = await fetch("https://formspree.io/f/SEU_ID_AQUI", { 
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
@@ -33,7 +33,7 @@ function ContatoPage() {
         setSobrenome('');
         setEmail('');
         setMensagem('');
-        navigate('/contato/sucesso'); 
+        navigate('/contato/sucesso', { state: { fromForm: true } }); 
       } else {
         alert("Ocorreu um erro ao enviar o formulário. Tente novamente.");
       }
@@ -73,7 +73,7 @@ function ContatoPage() {
                 type="text" 
                 id="nome" 
                 name="nome" 
-                placeholder="Seu nome"
+                placeholder="Jane"
                 value={nome}
                 onChange={(e) => setNome(e.target.value)}
                 required 
@@ -85,7 +85,7 @@ function ContatoPage() {
                 type="text" 
                 id="sobrenome" 
                 name="sobrenome" 
-                placeholder="Seu sobrenome"
+                placeholder="Smitherton"
                 value={sobrenome}
                 onChange={(e) => setSobrenome(e.target.value)}
                 required 

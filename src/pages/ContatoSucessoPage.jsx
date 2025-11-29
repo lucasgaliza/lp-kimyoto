@@ -8,8 +8,14 @@ function ContatoSucessoPage() {
   const [countdown, setCountdown] = useState(10);
 
   const isFromWhatsapp = location.state?.fromWhatsapp;
+  const isFromForm = location.state?.fromForm;
 
   useEffect(() => {
+    if (!isFromWhatsapp && !isFromForm) {
+      navigate('/', { replace: true });
+      return;
+    }
+
     if (isFromWhatsapp) {
       return; 
     }
@@ -26,7 +32,11 @@ function ContatoSucessoPage() {
       clearTimeout(redirectTimer);
       clearInterval(countdownTimer);
     };
-  }, [navigate, isFromWhatsapp]);
+  }, [navigate, isFromWhatsapp, isFromForm]);
+
+  if (!isFromWhatsapp && !isFromForm) {
+    return null;
+  }
 
   return (
     <div className="sucesso-container">
