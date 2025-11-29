@@ -26,10 +26,16 @@
 }
 
 .sucesso-container .redirect-mensagem {
-  margin-top: 32px;
+  margin-top: 48px;
   font-size: 16px;
   color: #666;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.countdown-highlight {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #E22F28; 
 }
 
 .button-voltar {

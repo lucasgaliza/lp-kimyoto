@@ -31,16 +31,16 @@ function ContatoSucessoPage() {
   return (
     <div className="sucesso-container">
       {isFromWhatsapp ? (
-        <h2>Redirecionando para o WhatsApp...</h2>
+        <h2>Obrigado pelo seu interesse na Kimyoto Alimentos!</h2>
       ) : (
         <h2>Formulário enviado com sucesso!</h2>
       )}
 
-      <p>Obrigado por entrar em contato. Responderemos em breve.</p>
+      <p>Responderemos sua mensagem em breve.</p>
       
       {!isFromWhatsapp && (
         <p className="redirect-mensagem">
-          Clique no botão abaixo para retornar a página inicial, ou aguarde {countdown} segundos para ser redirecionado automaticamente
+          Clique no botão abaixo para retornar a página inicial, ou aguarde <span className="countdown-highlight">{countdown}</span> segundos para ser redirecionado automaticamente.
         </p>
       )}
 
